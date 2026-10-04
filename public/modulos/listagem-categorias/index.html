@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Listagem de Categorias - ValidaEstoque</title>
+
+    <!-- CSS Global do sistema -->
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+
+    <!-- CSS da nossa tela -->
+    <link rel="stylesheet" href="listagem-categorias.css">
+
+    <script src="https://kit.fontawesome.com/ec3a3fcdd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Aqui será carregado o cabeçalho padrão -->
+    <div id="cabecalho-container"></div>
+
+    <div class="layout-container">
+
+        <!-- Aqui será carregado o menu lateral padrão -->
+        <div id="menu-lateral-container"></div>
+
+        <!-- Conteúdo da nossa tela -->
+        <main class="main-content">
+
+            <h2 class="titulo-pagina">Listagem de Categorias</h2>
+<!-- Área de pesquisa -->
+<div class="barra-acoes">
+
+    <div class="pesquisa-box">
+        <input
+            type="text"
+            id="campo-pesquisa"
+            placeholder="Pesquisar categoria..."
+            class="input-padrao"
+        >
+    </div>
+
+    <div class="botoes-acao">
+        <button type="button" class="btn-padrao btn-cinza-escuro" id="btn-atualizar">
+            Atualizar
+        </button>
+    </div>
+
+</div>
+<!-- Tabela de categorias -->
+<div class="tabela-container">
+
+    <table class="tabela-padrao">
+
+        <thead>
+            <tr>
+                <th>Categoria</th>
+                <th>Descrição</th>
+                <th>Cor</th>
+            </tr>
+        </thead>
+
+        <tbody id="lista-categorias">
+            <!-- As categorias serão colocadas aqui pelo JavaScript -->
+        </tbody>
+
+    </table>
+
+</div>
+        </main>
+
+    </div>
+    
+    <script src="listagem-categorias.js"></script>
+
+</body>
+
+</html>
