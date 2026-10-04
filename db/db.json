@@ -1,0 +1,165 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Fernanda Costa",
+      "email": "fernanda@validaestoque.com",
+      "senha": "123456",
+      "perfil": "gerente"
+    },
+    {
+      "id": 2,
+      "nome": "Luciano Pereira",
+      "email": "luciano@validaestoque.com",
+      "senha": "123456",
+      "perfil": "estoquista"
+    }
+  ],
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Cereais",
+      "descricao": "Grãos e cereais em geral",
+      "cor": "#C9A227"
+    },
+    {
+      "id": 2,
+      "nome": "Padaria",
+      "descricao": "Pães, bolos e salgados",
+      "cor": "#D85A30"
+    },
+    {
+      "id": 3,
+      "nome": "Bebidas",
+      "descricao": "Sucos, refrigerantes e água",
+      "cor": "#EF9F27"
+    },
+    {
+      "nome": "Laticínios",
+      "descricao": "Leite, iogurte, queijos",
+      "cor": "#e7eb24",
+      "id": 4
+    }
+  ],
+  "fornecedores": [
+    {
+      "id": 1,
+      "razaoSocial": "Distribuidora Minas LTDA.",
+      "cnpj": "12.345.678/0001-90",
+      "telefone": "(31)99999-9999",
+      "email": "distri@gmail.com",
+      "categoriasFornecidas": [
+        1
+      ]
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Arroz 5kg",
+      "categoriaId": 1,
+      "fornecedorId": 1,
+      "codigoBarras": "7891234567890",
+      "precoCompra": 4.5,
+      "precoVenda": 6,
+      "unidadeMedida": "UN",
+      "estoqueMinimo": 20,
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "nome": "Pão de Forma",
+      "categoriaId": 2,
+      "fornecedorId": 1,
+      "codigoBarras": "7899876543210",
+      "precoCompra": 5,
+      "precoVenda": 7.5,
+      "unidadeMedida": "UN",
+      "estoqueMinimo": 10,
+      "ativo": true
+    }
+  ],
+  "lotes": [
+    {
+      "id": 1,
+      "produtoId": 1,
+      "fornecedorId": 1,
+      "numeroLote": "L2026-0501",
+      "quantidade": 20,
+      "dataEntrada": "2026-05-01",
+      "dataValidade": "2026-09-23"
+    },
+    {
+      "id": 2,
+      "produtoId": 2,
+      "fornecedorId": 1,
+      "numeroLote": "L2026-0810",
+      "quantidade": 10,
+      "dataEntrada": "2026-08-10",
+      "dataValidade": "2026-09-30"
+    }
+  ],
+  "movimentacoes": [
+    {
+      "id": 1,
+      "produtoId": 1,
+      "loteId": 1,
+      "tipo": "entrada",
+      "motivo": "compra",
+      "quantidade": 20,
+      "data": "2026-05-01",
+      "observacao": "Compra inicial"
+    },
+    {
+      "id": 2,
+      "produtoId": 1,
+      "loteId": 1,
+      "tipo": "saida",
+      "motivo": "venda",
+      "quantidade": 5,
+      "data": "2026-09-10",
+      "observacao": "Venda balcão"
+    },
+    {
+      "id": 3,
+      "produtoId": 2,
+      "loteId": 2,
+      "tipo": "saida",
+      "motivo": "descarte_vencimento",
+      "quantidade": 2,
+      "data": "2026-09-28",
+      "observacao": "Lote vencido, descartado"
+    },
+    {
+      "id": 4,
+      "produtoId": 1,
+      "loteId": 1,
+      "tipo": "saida",
+      "motivo": "avaria",
+      "quantidade": 1,
+      "data": "2026-09-15",
+      "observacao": "Embalagem danificada"
+    }
+  ],
+  "promocoes": [
+    {
+      "id": 1,
+      "produtoId": 1,
+      "desconto": 20,
+      "dataInicio": "2026-09-08",
+      "dataFim": "2026-09-20",
+      "motivo": "Próximo do vencimento"
+    }
+  ],
+  "vendasPerdidas": [
+    {
+      "id": 1,
+      "produtoId": 2,
+      "quantidade": 3,
+      "valorEstimado": 26.97,
+      "data": "2026-09-30",
+      "motivo": "Produto indisponível",
+      "status": "pendente"
+    }
+  ]
+}

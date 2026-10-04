@@ -1,0 +1,98 @@
+/* ================= LISTAGEM DE CATEGORIAS ================= */
+
+.mensagem-lista {
+    padding: 0.9rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    color: #475569;
+    font-size: 1.05rem;
+}
+
+.mensagem-lista.erro {
+    border-color: #dc2626;
+    color: #dc2626;
+}
+
+.tabela-wrapper {
+    overflow-x: auto; /* evita quebrar o layout em telas pequenas */
+}
+
+.tabela-categorias {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-categorias thead {
+    background-color: #cbd5e1;
+}
+
+.tabela-categorias th {
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.tabela-categorias td {
+    padding: 0.9rem 1rem;
+    color: #334155;
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: middle;
+}
+
+.tabela-categorias tbody tr:hover td {
+    background-color: #e2e8f0;
+}
+
+/* Bolinha colorida + código hexadecimal da cor */
+.cor-celula {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.cor-bolinha {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #94a3b8;
+    flex-shrink: 0;
+}
+
+.cor-codigo {
+    font-size: 0.9rem;
+    color: #64748b;
+    text-transform: uppercase;
+}
+
+/* Botões da coluna Ações */
+.acoes-celula {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-acao {
+    padding: 0.45rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.btn-acao:hover {
+    filter: brightness(0.9);
+}
+
+.btn-editar {
+    background-color: #475569;
+}
+
+.btn-excluir {
+    background-color: #dc2626;
+}

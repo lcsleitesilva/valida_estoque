@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home - ValidaEstoque</title>
+
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<script src="https://kit.fontawesome.com/ec3a3fcdd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!-- CABEÇALHO -->
+	<!-- Container vazio onde o JavaScript vai injetar o cabeçalho -->
+	<div id="cabecalho-container"></div>
+
+	<div class="layout-container">
+
+		<!-- Container vazio onde o JavaScript vai injetar o menu -->
+		<div id="menu-lateral-container"></div>
+
+		<!-- CONTEÚDO PRINCIPAL (Home) -->
+		<main class="main-content">
+			<h2 class="saudacao" id="mensagem-saudacao">Olá, Usuário!</h2>
+
+			<!-- Primeira linha de Cards -->
+			<div class="row g-4 mb-5">
+				<div class="col-12 col-md-4">
+					<div class="card-info">
+						<h6 class="card-title">Quantidade de produtos no estoque</h6>
+						<p class="card-value">.........</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card-info">
+						<h6 class="card-title">Sem estoque</h6>
+						<p class="card-value">Nenhum produto</p>
+					</div>
+				</div>
+				<div class="col-12 col-md-4">
+					<div class="card-info">
+						<h6 class="card-title">Estoque mínimo</h6>
+						<p class="card-value mb-1">1 Produto</p>
+						<a href="#" class="card-link mt-auto">Ver detalhes</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- Segunda linha de Cards -->
+			<div class="row g-4 mb-5">
+				<div class="col-12 col-md-4">
+					<div class="card-info">
+						<h6 class="card-title">Custo total de produtos</h6>
+						<p class="card-value">R$ .....</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Indicadores Inferiores -->
+			<div class="indicadores-container">
+				<div class="indicador-item">
+					<div class="indicador-bola"></div>
+					<span>5 críticos</span>
+				</div>
+				<div class="indicador-item">
+					<div class="indicador-bola"></div>
+					<span>12 atenção</span>
+				</div>
+				<div class="indicador-item">
+					<div class="indicador-bola"></div>
+					<span>8 normais</span>
+				</div>
+			</div>
+
+		</main>
+	</div>
+
+	<!-- Scripts dos componentes no final da página -->
+	<script src="./assets/js/login.js"></script>
+	<script src="./assets/js/componentes/cabecalho.js"></script>
+	<script src="./assets/js/componentes/menuLateral.js"></script>
+	<script>
+		function initPage() {
+			if (usuarioCorrente && usuarioCorrente.nome) {
+				let primeiroNome = usuarioCorrente.nome.split(' ')[0];
+				document.getElementById('mensagem-saudacao').innerHTML = `Olá, ${primeiroNome}!`;
+			}
+		}
+
+		// Aguarda a tela carregar para executar a substituição
+		window.addEventListener('load', initPage);
+	</script>
+</body>
+
+</html>

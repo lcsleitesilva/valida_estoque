@@ -1,0 +1,65 @@
+.saudacao {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #334155;
+  margin-bottom: 3rem;
+}
+
+.card-info {
+  background-color: #e2e8f0;
+  border-radius: 4px;
+  min-height: 110px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info .card-title {
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+.card-info .card-value {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.card-info .card-link {
+  font-size: 0.8rem;
+  color: #475569;
+  text-decoration: none;
+}
+
+.card-info .card-link:hover {
+  text-decoration: underline;
+}
+
+/* Bolinhas de status na parte inferior */
+.indicadores-container {
+  display: flex;
+  gap: 4rem;
+  margin-top: 5rem;
+  padding-left: 1rem;
+}
+
+.indicador-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.indicador-item span {
+  font-weight: 600;
+  color: #475569;
+  font-size: 1.2rem;
+}
+
+.indicador-bola {
+  width: 70px;
+  height: 70px;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+}

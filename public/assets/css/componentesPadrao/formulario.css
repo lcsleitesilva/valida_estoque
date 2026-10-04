@@ -1,0 +1,95 @@
+/* ================= TÍTULO E BARRA DE AÇÕES ================= */
+.titulo-pagina {
+    font-size: 2.2rem;
+    color: #475569;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.barra-acoes {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.pesquisa-box {
+    flex-grow: 1; /* Faz a barra de pesquisa crescer e ocupar o espaço livre */
+    min-width: 250px;
+}
+
+.input-padrao {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #475569;
+}
+
+.botoes-acao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* ================= BOTÕES PADRÕES ================= */
+.btn-padrao {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #ffffff;
+    transition: filter 0.2s;
+}
+
+.btn-padrao:hover {
+    filter: brightness(0.9);
+}
+
+.btn-vermelho { background-color: #dc2626; }
+.btn-cinza-escuro { background-color: #475569; }
+.btn-azul { background-color: #2563eb; }
+
+/* Para os botões grandes de Salvar/Cancelar */
+.btn-largo {
+    min-width: 150px;
+}
+
+/* ================= FORMULÁRIO ================= */
+.formulario-padrao {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1000px; /* Limita a largura em telas muito grandes */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #94a3b8;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

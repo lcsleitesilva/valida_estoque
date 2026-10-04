@@ -1,0 +1,21 @@
+.header-principal {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.logo-box {
+  background-color: #94a3b8;
+  color: #ffffff;
+  padding: 4px 32px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.nome-sistema {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #475569;
+  margin: 0 0 0 16px;
+}

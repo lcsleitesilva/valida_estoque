@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Produtos - ValidaEstoque</title>
+
+	<link rel="stylesheet" href="produtos.css">
+	<link rel="stylesheet" href="../../assets/css/styles.css">
+	<script src="https://kit.fontawesome.com/ec3a3fcdd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<!-- Cabeçalho -->
+	<!-- Container vazio onde o JavaScript vai injetar o cabeçalho -->
+	<div id="cabecalho-container"></div>
+
+	<div class="layout-container">
+		<!-- Container vazio onde o JavaScript vai injetar o menu -->
+		<div id="menu-lateral-container"></div>
+
+		<!-- CONTEÚDO PRINCIPAL (Home) -->
+		<main class="main-content conteudo">
+			<h2>Produtos</h2>
+
+			<!-- Pesquisa e botões -->
+			<div class="acoes">
+
+				<div class="pesquisa">
+					<input type="text" id="campoPesquisa" placeholder="Pesquisar produto...">
+				</div>
+
+				<div class="botoes">
+					<button id="btnAtualizar">
+						Atualizar
+					</button>
+
+					<button id="btnCadastrar">
+						+ Cadastrar produtos
+					</button>
+				</div>
+
+			</div>
+
+
+			<!-- Mensagem quando não encontrar produtos -->
+			<div id="mensagem">
+				Nenhum produto encontrado
+			</div>
+
+
+			<!-- Tabela de produtos -->
+			<table>
+
+				<thead>
+					<tr>
+						<th>Produto</th>
+						<th>Código</th>
+						<th>Categoria</th>
+						<th>Estoque</th>
+						<th>Preço</th>
+						<th>Fornecedor</th>
+					</tr>
+				</thead>
+
+				<tbody id="listaProdutos">
+					<!-- Os produtos serão inseridos pelo JavaScript -->
+				</tbody>
+
+			</table>
+		</main>
+	</div>
+
+	<!-- JavaScript -->
+	<script src="produtos.js"></script>
+	<script src="../../assets/js/componentes/cabecalho.js"></script>
+	<script src="../../assets/js/componentes/menuLateral.js"></script>
+</body>
+
+</html>

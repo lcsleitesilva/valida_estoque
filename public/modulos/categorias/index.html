@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorias - ValidaEstoque</title>
+
+  <!-- CSS Global (importa os componentes padrão do sistema) -->
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <!-- CSS específico da listagem de categorias -->
+  <link rel="stylesheet" href="categorias.css">
+  <script src="https://kit.fontawesome.com/ec3a3fcdd8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <!-- Container vazio onde o JavaScript vai injetar o cabeçalho -->
+  <div id="cabecalho-container"></div>
+
+  <div class="layout-container">
+
+    <!-- Container vazio onde o JavaScript vai injetar o menu -->
+    <div id="menu-lateral-container"></div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <h2 class="titulo-pagina">Categoria</h2>
+
+      <!-- Barra de Ações Superior -->
+      <div class="barra-acoes">
+        <div class="pesquisa-box">
+          <input type="text" id="campo-pesquisa" placeholder="Pesquisar categoria..." class="input-padrao">
+        </div>
+        <div class="botoes-acao">
+          <button type="button" class="btn-padrao btn-cinza-escuro" id="btn-atualizar">Atualizar</button>
+          <button type="button" class="btn-padrao btn-vermelho" id="btn-cadastrar">+ Cadastrar categoria</button>
+        </div>
+      </div>
+
+      <!-- Mensagem exibida quando não há categorias para mostrar -->
+      <div id="mensagem" class="mensagem-lista" style="display: none;">Nenhuma categoria encontrada</div>
+
+      <!-- Tabela de categorias -->
+      <div class="tabela-wrapper">
+        <table class="tabela-categorias" id="tabela-categorias">
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Descrição</th>
+              <th>Cor</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <!-- As linhas são inseridas pelo JavaScript -->
+          <tbody id="lista-categorias"></tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- Scripts de Autenticação (protege a rota) e Componentes -->
+  <script src="../../assets/js/login.js"></script>
+  <script src="../../assets/js/componentes/cabecalho.js"></script>
+  <script src="../../assets/js/componentes/menuLateral.js"></script>
+
+  <!-- Script Específico desta tela -->
+  <script src="categorias.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categoria - ValidaEstoque</title>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/ec3a3fcdd8.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Global (que importará o CSS do formulário) -->
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+
+<body>
+  <!-- Cabeçalho Injetado via JS -->
+  <div id="cabecalho-container"></div>
+
+  <div class="layout-container">
+
+    <!-- Menu Lateral Injetado via JS -->
+    <div id="menu-lateral-container"></div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <h2 class="titulo-pagina" id="titulo-tela">Categoria</h2>
+
+      <!-- Barra de Ações Superior -->
+      <div class="barra-acoes">
+        <div class="pesquisa-box">
+          <input type="text" placeholder="Pesquisar categoria..." class="input-padrao">
+        </div>
+        <div class="botoes-acao">
+          <button class="btn-padrao btn-vermelho">Excluir</button>
+          <button class="btn-padrao btn-cinza-escuro">Atualizar</button>
+          <button class="btn-padrao btn-vermelho">+ Cadastrar categoria</button>
+        </div>
+      </div>
+
+      <!-- Formulário -->
+      <form id="form-categoria" class="formulario-padrao">
+
+        <div class="form-group">
+          <label for="nome" class="form-label">Nome da categoria:</label>
+          <input type="text" id="nome" name="nome" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="descricao" class="form-label">Descrição:</label>
+          <input type="text" id="descricao" name="descricao" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cor" class="form-label">Cor da categoria</label>
+          <input type="color" id="cor" name="cor" class="form-control" value="#2563eb" style="height: 50px; padding: 0.5rem; cursor: pointer;">
+        </div>
+
+        <!-- Rodapé do Formulário -->
+        <div class="form-rodape">
+          <button type="button" class="btn-padrao btn-cinza-escuro btn-largo" id="btn-cancelar">Cancelar</button>
+          <button type="submit" class="btn-padrao btn-azul btn-largo">Salvar</button>
+        </div>
+
+      </form>
+    </main>
+  </div>
+
+  <!-- Scripts de Autenticação e Componentes -->
+  <script src="../../assets/js/login.js"></script>
+  <script src="../../assets/js/componentes/cabecalho.js"></script>
+  <script src="../../assets/js/componentes/menuLateral.js"></script>
+
+  <!-- Script Específico desta tela -->
+  <script src="form.js"></script>
+</body>
+
+</html>
